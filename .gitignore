@@ -1,0 +1,10 @@
+# Operating System files
+desktop.ini
+Thumbs.db
+.DS_Store
+
+# Temp files & diagnostic reports
+tests/
+*.tmp
+*.bak
+~$*
