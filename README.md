@@ -19,6 +19,25 @@ Hệ thống được thiết kế dạng Web App trực quan, tinh gọn và t�
 3. **1-Click Sao Chép (Copy)**: Mỗi bài thực hành đều có nút sao chép nhanh Prompt tiện lợi, tránh lỗi gõ nhầm hay thiếu sót khi thực hành.
 4. **Tích Hợp NotebookLM Sâu Sát**: Hướng dẫn giáo viên tận dụng thế mạnh đọc tài liệu chính xác, chống bịa đặt (hallucination) của Google NotebookLM hoàn toàn miễn phí.
 5. **Chuẩn Định Dạng Văn Bản Sạch (.docx)**: Tích hợp sẵn luật ràng buộc xuất file Word theo Nghị định 30/2020/NĐ-CP (Times New Roman 14pt, giãn dòng Single, Spacing 6pt, sạch biểu tượng rác).
+6. **Cơ Sở Dữ Liệu Thời Gian Thực (Google Firebase Realtime Sync)**: Tự động đồng bộ các bài thực hành và câu lệnh Prompt từ Cloud. Mọi sửa đổi từ Quản trị viên được cập nhật đến toàn thể giáo viên tức thì (< 0.5s) mà không cần tải lại trang.
+7. **Phân Quyền Quản Trị Bằng Mã PIN**: Đăng nhập nhanh bằng Mã PIN bảo mật (mã hóa SHA-256 một chiều chống soi mã). Cho phép Quản trị viên thêm/sửa/xóa bài, thêm/sửa prompt và đổi mã PIN linh hoạt ngay trên giao diện web.
+
+---
+
+## 🔐 Hướng Dẫn Quản Trị Viên (Admin) Sử Dụng Mã PIN
+
+1. **Đăng nhập Quản trị**:
+   * Nhấp vào nút **`[ 🔒 Quản trị ]`** ở góc trên thanh điều hướng.
+   * Nhập Mã PIN bảo mật (Mã PIN mặc định ban đầu: `260388`).
+   * Bấm **"Mở khóa Quản trị"**.
+2. **Thực hiện Chỉnh sửa & Thêm mới**:
+   * **Sửa nhanh câu lệnh Prompt**: Bấm nút **`[ ✏️ Sửa ]`** ngay cạnh nút *Sao chép Prompt* $\rightarrow$ Sửa nội dung $\rightarrow$ Bấm **"Lưu Prompt vào Firebase"**.
+   * **Thêm Prompt vào bài**: Bấm **`[ ➕ Thêm Prompt ]`** trên thanh công cụ của bài đó.
+   * **Sửa thông tin bài / danh mục**: Bấm **`[ ✏️ Sửa bài ]`** $\rightarrow$ Sửa tiêu đề, số thứ tự, chuyên mục $\rightarrow$ Bấm **"Lưu thay đổi"**.
+   * **Thêm bài thực hành mới**: Bấm **`[ ➕ Thêm bài mới ]`** trên thanh trạng thái Admin màu vàng phía trên cùng.
+   * **Đổi mã PIN mới**: Bấm **`[ 🔑 Đổi mã PIN ]`** để tự đặt mã PIN mới bí mật cho nhà trường.
+3. **Đăng xuất an toàn**:
+   * Bấm nút **`[ 🚪 Đăng xuất ]`** để khóa quyền quản trị, bảo vệ an toàn cho hệ thống.
 
 ---
 
