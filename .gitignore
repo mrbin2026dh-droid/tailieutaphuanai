@@ -8,3 +8,8 @@ tests/
 *.tmp
 *.bak
 ~$*
+
+# Sensitive private personal data (Bảo mật thông tin giáo viên theo NĐ 13/2023/NĐ-CP)
+*.xlsx
+*.xls
+DS_gv.*
